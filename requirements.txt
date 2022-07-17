@@ -1,0 +1,35 @@
+#web scraping using python
+
+#step 0:
+#make a env and activate
+
+
+#install all the requiremnents
+
+pip install requests
+
+pip install bs4
+
+pip install html5lib
+
+
+# create a python file (main.py)
+# in main.py
+
+import requests
+from bs4 import BeautifulSoup
+
+url ="https://www.codewithharry.com"
+
+#step 1: Get the HTML
+r = requests.get(url)
+htmlContent = r.content  #get html content form url in terminal
+#print(htmlContent)       #it will show all the content in massy way 
+
+#step 2: parse the Html    
+soup = BeautifulSoup(htmlContent, 'html.parser')
+print(soup.prettify())    # html content is now prettfy means human readable format
+
+#step 3: Html Tree traversal
+
+
