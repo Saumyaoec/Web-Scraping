@@ -1,0 +1,11 @@
+web scraping using python
+
+make a env and activate
+
+pip install requests
+
+pip install bs4
+
+pip install html5lib
+
+
